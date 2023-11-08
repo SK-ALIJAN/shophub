@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&random=false&width=435&lines=Hi+!+i+am+sk+alijan;this+is+my+demo+e-commerse;site+where+you+find+many;products)](https://git.io/typing-svg)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
+Building a complete e-commerce demo using React and Redux within a two-day timeframe involves setting up the environment, integrating state management, creating components for product display,  <br><br>
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+****************************************************************************************
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Tech-Stack Used:-
+1. React
+2. Redux 
+3. HTML
+4. styled components (CSS)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+****************************************************************************************
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Step-by-step instructions for using this app
 
-### `npm run build`
+#### 1. Clone the Repository
+```bash
+git clone <repository_URL>
+cd <project-directory>
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 2. Install Dependencies
+```bash
+npm install
+# or
+yarn install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 3. Start Development Server
+```bash
+npm start
+# or
+yarn start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 4. Customize and Develop
+- Modify code, components, or features according to your needs.
 
-### `npm run eject`
+#### 5. Build for Production
+```bash
+npm run build
+# or
+yarn build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### 6. Deployment
+- Deploy the production build to your hosting service of choice.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Replace `<repository_URL>` with the actual GitHub repository URL, and `<project-directory>` with the directory where the template will be cloned. Feel free to add any specific instructions provided by the template's README if needed.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+****************************************************************************************
+Deployed link:-
+<br>
+(https://shophub-ruddy.vercel.app/)
 
-## Learn More
+****************************************************************************************
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🔗 Links
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alijan786/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Terms and Conditions for using this project:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Deployment Restrictions: You are strictly prohibited from deploying any webpage from this project on any platform without explicit permission from the respective owners or rights holders.
+By using this tribute page, you agree to respect the privacy and security of other users and refrain from any disruptive behavior
+Please note that any unauthorized use, distribution, or deployment of this project is a violation of these terms and may be subject to legal consequences.
