@@ -4,7 +4,7 @@ import NotFoundPage from "../Components/NotFoundPage";
 import PrivateRoute from "../Routes/PrivateRoutes";
 import Home from "../Components/LandingPage/Home";
 import Shop from "../Components/Shop";
-import ManageProduct from "../Components/ManageProduct";
+import ManageProduct from "../Components/CRUD/ManageProduct";
 import Login from "../Components/Login";
 import Signup from "../Components/Signup";
 import MyAccount from "../Components/MyAccount";

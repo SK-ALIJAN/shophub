@@ -50,11 +50,14 @@ export const deleteItem = (itemId) => {
   return async (dispatch) => {
     try {
       dispatch({ type: CRUD_REQUEST });
-      await axios.delete(`https://fakestoreapi.com/products/${itemId}`);
+      let response = await axios.delete(
+        `https://fakestoreapi.com/products/${itemId}`
+      );
       dispatch({
         type: DELETE_ITEM,
         payload: itemId,
       });
+      console.log(response);
     } catch (error) {
       dispatch({ type: CRUD_ERROR, payload: error.message });
     }
