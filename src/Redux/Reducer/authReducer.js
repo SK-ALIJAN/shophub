@@ -1,4 +1,3 @@
-
 import {
   LOGIN_ERROR,
   LOGIN_RQUEST,
@@ -11,7 +10,6 @@ import {
 
 let SignupInitialState = {
   isLoading: false,
-  user: localStorage.getItem("token"),
   isError: false,
   errorMessage: null,
 };
@@ -27,7 +25,6 @@ const authSignupReducer = (state = SignupInitialState, { type, payload }) => {
       return {
         ...state,
         isLoading: false,
-        user: payload.id,
         isError: false,
         errorMessage: null,
       };
@@ -38,7 +35,6 @@ const authSignupReducer = (state = SignupInitialState, { type, payload }) => {
         isLoading: false,
         isError: true,
         errorMessage: payload,
-        user: null,
       };
 
     default:
@@ -48,7 +44,7 @@ const authSignupReducer = (state = SignupInitialState, { type, payload }) => {
 
 const LoginInitialState = {
   isLoading: false,
-  token: localStorage.getItem("token"),
+  user: localStorage.getItem("user"),
   isLoggedIn: localStorage.getItem("isLoggedIn"),
   isError: false,
   errorMessage: null,
@@ -65,7 +61,7 @@ const authLoginReducer = (state = LoginInitialState, { type, payload }) => {
       return {
         ...state,
         isLoading: false,
-        token: payload,
+        user: payload,
         isLoggedIn: true,
         isError: false,
         errorMessage: null,
@@ -77,7 +73,7 @@ const authLoginReducer = (state = LoginInitialState, { type, payload }) => {
         isLoading: false,
         isError: true,
         errorMessage: payload,
-        token: null,
+        user: null,
         isLoggedIn: false,
       };
 

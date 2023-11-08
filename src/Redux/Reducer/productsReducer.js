@@ -5,7 +5,7 @@ import {
 } from "../actiontype";
 
 const initialState = {
-  isLaoding: false,
+  isLoading: false,
   products: [],
   isError: false,
   errorMessage: null,
@@ -16,13 +16,13 @@ const productsReducer = (state = initialState, { type, payload }) => {
     case FETCH_PRODUCTS_REQUEST:
       return {
         ...state,
-        isLaoding: true,
+        isLoading: true,
       };
 
     case FETCH_PRODUCTS_SUCCESS:
       return {
         ...state,
-        isLaoding: false,
+        isLoading: false,
         products: payload,
         isError: false,
         errorMessage: null,
@@ -31,7 +31,7 @@ const productsReducer = (state = initialState, { type, payload }) => {
     case FETCH_PRODUCTS_ERROR:
       return {
         ...state,
-        isLaoding: false,
+        isLoading: false,
         products: [],
         isError: true,
         errorMessage: payload,

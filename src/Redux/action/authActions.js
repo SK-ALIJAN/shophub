@@ -15,14 +15,12 @@ export const signup = (credentials) => {
         type: SIGNUP_RQUEST,
       });
       const response = await axios.post(
-        "https://fakestoreapi.com/users",
+        "https://654b22d45b38a59f28ee8f8e.mockapi.io/user",
         credentials
       );
       dispatch({
         type: SIGNUP_SUCCESS,
-        payload: response.data,
       });
-      localStorage.setItem("user", response.data.id);
     } catch (error) {
       dispatch({
         type: SIGNUP_ERROR,
@@ -33,22 +31,30 @@ export const signup = (credentials) => {
 };
 
 export const login = (credentials) => {
+  let { email, password } = credentials;
+
   return async (dispatch) => {
     try {
       dispatch({
         type: LOGIN_RQUEST,
       });
-      const response = await axios.post(
-        "https://fakestoreapi.com/auth/login",
-        credentials
+      const response = await axios.get(
+        "https://654b22d45b38a59f28ee8f8e.mockapi.io/user"
       );
-      dispatch({
-        type: LOGIN_SUCCESS,
-        payload: response.data.token,
+      let filteredData = response.data.filter((ele) => {
+        return ele.email === email && ele.password === password;
       });
+      if (filteredData.length !== 0) {
+        dispatch({
+          type: LOGIN_SUCCESS,
+          payload: filteredData[0].id,
+        });
+      } else {
+        throw new Error("please look into your credentials");
+      }
 
       // store token id and Logged flag
-      localStorage.setItem("token", response.data.token);
+      localStorage.setItem("user", filteredData[0].id);
       localStorage.setItem("isLoggedIn", true);
     } catch (error) {
       dispatch({

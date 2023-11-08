@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { BsCartCheckFill } from "react-icons/bs";
 import styled from "styled-components";
 import { AiOutlineMenu } from "react-icons/ai";
+import { useSelector } from "react-redux";
 
 let Links = [
   { label: "Home", path: "/" },
-  { label: "Shop", path: "/shop" },
+  // { label: "Shop", path: "/shop" },
   { label: "Manage product", path: "/manageproduct" },
   { label: "Login", path: "/login" },
   { label: "Signup", path: "/signup" },
@@ -21,9 +22,17 @@ let activeLink = {
 
 const Navbar = () => {
   let [toggle, setToggle] = useState(false);
+    let { isLoggedIn } = useSelector((store) => store.userLogin);
+  let navigate = useNavigate();
 
   let handleToggle = () => {
     setToggle(!toggle);
+  };
+
+    let handleCart = (product) => {
+    if (isLoggedIn) {
+      navigate(`/cart`);
+    } else navigate("/login");
   };
 
   return (
@@ -55,9 +64,9 @@ const Navbar = () => {
           </div>
         </div>
 
-        <Link to={"/cart"} className="CartIcon">
+        <div className="CartIcon" onClick={handleCart}>
           <BsCartCheckFill />
-        </Link>
+        </div>
       </div>
     </WRAPPER>
   );
@@ -70,12 +79,17 @@ let WRAPPER = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  position: sticky;
+  top: 0;
+  background-color: #f8d4bd;
+  z-index: 2;
 
   .Logo {
     text-decoration: none;
     font-family: "Times New Roman", Times, serif;
     font-size: 1.5rem;
     font-weight: 700;
+    padding-left: 1rem;
     color: black;
     &:hover {
       color: #c05f09;
@@ -89,6 +103,7 @@ let WRAPPER = styled.div`
     justify-content: space-between;
 
     .Submenu {
+      margin-left: 8rem;
       .menuIcon {
         display: none;
       }
@@ -113,6 +128,7 @@ let WRAPPER = styled.div`
       font-size: 1.4rem;
       color: black;
       background-color: white;
+      margin-right: 1rem;
 
       &:hover {
         color: #c05f09;
@@ -135,6 +151,7 @@ let WRAPPER = styled.div`
           right: 0rem;
           padding-left: 2rem;
           padding-top: 2rem;
+          z-index: 2;
 
           a {
             margin-bottom: 2rem;
