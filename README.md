@@ -7,12 +7,17 @@ Building a complete e-commerce demo using React and Redux within a two-day timef
 
 ****************************************************************************************
 
-# Preview of it : 
+# Preview of it 
 <p align="center"><img src="https://github.com/SK-ALIJAN/shophub/assets/106768235/2c06bdaf-ab57-49ee-986e-c1aa2e8d12a6"></p> 
 <p align="center"><img src="https://github.com/SK-ALIJAN/shophub/assets/106768235/7be0ba12-fee8-4e2e-b1cf-230b759315a8"></p> 
 <p align="center"><img src="https://github.com/SK-ALIJAN/shophub/assets/106768235/89f4c40e-d29f-4d36-935e-d68694561db1"></p> 
-
 <p align="center"><img src="https://github.com/SK-ALIJAN/shophub/assets/106768235/ce29e21a-01c8-4a76-a024-473cfa73308c"></p> 
+
+****************************************************************************************
+
+# demo video
+<video src="https://github.com/SK-ALIJAN/shophub/assets/106768235/b1503ad1-f534-402f-9db1-2b30cca69b73"> </video>
+
 
 ****************************************************************************************
 
